@@ -9,4 +9,6 @@ while tahmin != sayı:
         print("Daha küçük bir sayı deneyin.")
     else:
         print("Tebrikler! Doğru tahmin ettiniz.")   
-        
+
+
+#İEB#
