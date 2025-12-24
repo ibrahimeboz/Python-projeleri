@@ -3,9 +3,14 @@
 # - Pozitif yeşil / negatif kırmızı
 # - Değer etiketleri ve sıfır çizgisi
 # - PNG olarak kaydetme seçeneği
+# - Bilgisayarınızda matplotlib yüklü değilse sorun etmeyin o modül olmadanda kullanabilirsiniz
 
 import math
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+    MATPLOTLIB_AVAILABLE = True
+except ImportError:
+    MATPLOTLIB_AVAILABLE = False
 
 def parse_number(s):
     try:
@@ -68,6 +73,11 @@ def draw_chart(profits, unit=None, max_width=50, show_values=True):
     print("-" * (len(title)))
 
 def draw_chart_visual(profits, unit=None, file_path=None):
+    if not MATPLOTLIB_AVAILABLE:
+        print("\n[UYARI] Matplotlib modülü eksik olduğu için görsel grafik oluşturulamadı.")
+        print("Yüklemek için terminale 'pip install matplotlib' yazabilirsiniz.")
+        return
+
     months = list(range(1, len(profits) + 1))
     fig, ax = plt.subplots()
     bars = ax.bar(months, profits, color=["green" if x >= 0 else "red" for x in profits])
@@ -137,5 +147,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 #İEB#
