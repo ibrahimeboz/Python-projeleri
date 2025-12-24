@@ -4,3 +4,5 @@ vergiOranı=0.27
 
 print("maaşAli" " " + str(maaşAli - (maaşAli * vergiOranı)))
 print("maaşVeli" " " + str(maaşVeli - (maaşVeli * vergiOranı)))
+
+#İEB#
