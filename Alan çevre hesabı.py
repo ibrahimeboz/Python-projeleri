@@ -9,3 +9,5 @@ print(type(alan))
 print(type(çevre)) 
 
 print("alan: ", str(alan) + ", çevre: ", str(çevre))
+
+#İEB#
