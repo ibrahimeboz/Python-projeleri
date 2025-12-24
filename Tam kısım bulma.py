@@ -19,3 +19,5 @@ if __name__ == "__main__":
     ondalıklı_kısım = sayı - tam_kısım
     print(tam_kısım, ondalıklı_kısım)
     print("tam kısmı", tam_kısım)
+
+#İEB#
