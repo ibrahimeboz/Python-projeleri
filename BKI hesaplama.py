@@ -27,3 +27,5 @@ elif bki_değeri >= 35 and bki_değeri < 39.9:
     print("aşırı obez")
 else:
     print("morbid obez")
+
+#İEB#
