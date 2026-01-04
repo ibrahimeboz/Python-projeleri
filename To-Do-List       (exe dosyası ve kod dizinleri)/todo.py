@@ -1,4 +1,11 @@
+#to do list uygulaması
+#exe hali dist dosyasının içindedir 
+#kodlayan kişi: ibrahim etem boz
+
+
 import tkinter as tk
+
+
 
 def add_task(event=None):
     task = entry.get()
@@ -84,3 +91,4 @@ listbox.bind("<BackSpace>", delete_task)
 listbox.bind("<Delete>", delete_task)
 
 root.mainloop()
+
